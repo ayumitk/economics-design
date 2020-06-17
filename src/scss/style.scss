@@ -1,0 +1,210 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/input-group";
+@import "node_modules/bootstrap/scss/custom-forms";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/media";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/print";
+
+@font-face {
+  font-family: "Concept";
+  src: url("../fonts/ConceptRegular.woff2") format("woff2"),
+    url("../fonts/ConceptRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "nsjp";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/nsjpdl.woff") format("woff");
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 16px;
+  font-family: "nsjp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.btn,
+.form-control {
+  border-radius: 0;
+}
+
+$white: #fff;
+$black: #1a1a1a;
+$red: #ed2c3f;
+
+#wrapper {
+  margin-top: 0;
+  padding-top: 100vh;
+}
+
+/* ---------------------------------
+ Header
+--------------------------------- */
+#header-navbar {
+  top: 0;
+  position: fixed;
+  z-index: 4;
+  display: flex;
+  width: 100%;
+  .header-logo {
+    img {
+      width: 90px;
+    }
+  }
+  a {
+    color: $white;
+    display: block;
+  }
+  .header-nav {
+    a {
+      padding: 1.5rem 1rem;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}
+
+/* ---------------------------------
+ Background video
+--------------------------------- */
+.bg-video {
+  overflow: hidden;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  position: absolute;
+  video {
+    filter: grayscale(100%);
+    z-index: 1;
+    width: 100vw;
+  }
+  &::before {
+    background: linear-gradient(to top, #7ea676, #5fb3ae);
+    // background: linear-gradient(to top, #6b9961, #19827c);
+    z-index: 3;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    // mix-blend-mode: screen;
+    mix-blend-mode: overlay;
+  }
+  &::after {
+    background: #000;
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+body.design-1 .bg-video::after {
+  opacity: 0.3;
+}
+body.design-2 .bg-video::after {
+  opacity: 0.6;
+}
+body.design-3 .bg-video::after {
+  opacity: 0.2;
+}
+body.design-4 .bg-video::after {
+  opacity: 0.3;
+}
+body.design-5 .bg-video::after {
+  opacity: 0;
+}
+body.design-5 .bg-video::before {
+  mix-blend-mode: screen;
+}
+
+/* ---------------------------------
+ Hero
+--------------------------------- */
+#hero {
+  .hero-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    h1,
+    p {
+      color: $white;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    h1 {
+      font-family: "Concept";
+      font-size: 76px;
+    }
+    p {
+      font-size: 26px;
+      letter-spacing: 2px;
+    }
+  }
+}
