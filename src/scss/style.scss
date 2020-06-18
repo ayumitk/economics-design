@@ -175,11 +175,13 @@ body.design-3 .bg-video::after {
 body.design-4 .bg-video::after {
   opacity: 0.3;
 }
-body.design-5 .bg-video::after {
-  opacity: 0;
-}
-body.design-5 .bg-video::before {
-  mix-blend-mode: screen;
+body.design-5 .bg-video {
+  &::after {
+    opacity: 0;
+  }
+  &::before {
+    mix-blend-mode: screen;
+  }
 }
 
 /* ---------------------------------
@@ -196,7 +198,7 @@ body.design-5 .bg-video::before {
     h1,
     p {
       color: $white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
     h1 {
       font-family: "Concept";
@@ -206,5 +208,54 @@ body.design-5 .bg-video::before {
       font-size: 26px;
       letter-spacing: 2px;
     }
+  }
+}
+
+body.design-6 {
+  .bg-video {
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: linear-gradient(
+        -45deg,
+        #00c9ff,
+        #18a79b,
+        #5fe592,
+        #c6ea8d,
+        #fe90af
+      );
+      background-size: 500% 500%;
+      animation: gradient 10s ease infinite;
+    }
+  }
+
+  #hero {
+    .hero-content {
+      h1,
+      p {
+        text-shadow: none;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+
+  #header-navbar {
+    a {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

@@ -10976,7 +10976,7 @@ body.design-5 .bg-video::before {
 #hero .hero-content h1,
 #hero .hero-content p {
   color: #fff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #hero .hero-content h1 {
@@ -10987,4 +10987,51 @@ body.design-5 .bg-video::before {
 #hero .hero-content p {
   font-size: 26px;
   letter-spacing: 2px;
+}
+
+body.design-6 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-6 .bg-video::before {
+  mix-blend-mode: screen;
+  background: -webkit-linear-gradient(135deg, #00c9ff, #18a79b, #5fe592, #c6ea8d, #fe90af);
+  background: linear-gradient(-45deg, #00c9ff, #18a79b, #5fe592, #c6ea8d, #fe90af);
+  background-size: 500% 500%;
+  -webkit-animation: gradient 10s ease infinite;
+          animation: gradient 10s ease infinite;
+}
+
+body.design-6 #hero .hero-content h1,
+body.design-6 #hero .hero-content p {
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body.design-6 #header-navbar a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
