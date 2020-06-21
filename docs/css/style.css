@@ -11042,7 +11042,7 @@ body.design-7 .bg-video::after {
 
 body.design-7 .bg-video::before {
   mix-blend-mode: screen;
-  background: url("./images/bg-7.jpg") center center/cover no-repeat fixed;
+  background: url("../images/bg-7.jpg") center center/cover no-repeat fixed;
 }
 
 body.design-7 #hero .hero-content h1,
