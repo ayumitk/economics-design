@@ -259,3 +259,31 @@ body.design-6 {
     background-position: 0% 50%;
   }
 }
+
+body.design-7 {
+  .bg-video {
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: url("/images/bg-7.jpg") center center / cover no-repeat fixed;
+    }
+  }
+
+  #hero {
+    .hero-content {
+      h1,
+      p {
+        text-shadow: none;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  #header-navbar {
+    a {
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
