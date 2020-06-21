@@ -11054,3 +11054,40 @@ body.design-7 #hero .hero-content p {
 body.design-7 #header-navbar a {
   color: rgba(0, 0, 0, 0.7);
 }
+
+body.design-8 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-8 .bg-video::before {
+  mix-blend-mode: screen;
+  background: url("../images/bg-8.jpg") center center/cover no-repeat fixed;
+}
+
+body.design-8 #hero .hero-content h1,
+body.design-8 #hero .hero-content p {
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body.design-8 #header-navbar a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+body.design-9 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-9 .bg-video::before {
+  mix-blend-mode: screen;
+  background: url("../images/bg-9.jpg") center center/cover no-repeat fixed;
+}
+
+body.design-10 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-10 .bg-video::before {
+  mix-blend-mode: screen;
+  background: url("../images/bg-10.jpg") center center/cover no-repeat fixed;
+}
