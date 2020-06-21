@@ -11091,3 +11091,63 @@ body.design-10 .bg-video::before {
   mix-blend-mode: screen;
   background: url("../images/bg-10.jpg") center center/cover no-repeat fixed;
 }
+
+body.design-11 .bg-video video {
+  -webkit-filter: grayscale(100%) contrast(150%);
+          filter: grayscale(100%) contrast(150%);
+}
+
+body.design-11 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-11 .bg-video::before {
+  mix-blend-mode: screen;
+  background: url("../images/bg-11.jpg") center center/cover no-repeat fixed;
+}
+
+body.design-11b .bg-video video {
+  -webkit-filter: grayscale(100%) contrast(150%);
+          filter: grayscale(100%) contrast(150%);
+}
+
+body.design-11b .bg-video::after {
+  opacity: 0;
+}
+
+body.design-11b .bg-video::before {
+  mix-blend-mode: screen;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffe000), to(#002a7f));
+  background: -webkit-linear-gradient(bottom, #ffe000, #002a7f);
+  background: linear-gradient(to top, #ffe000, #002a7f);
+}
+
+body.design-12 .bg-video video {
+  -webkit-filter: grayscale(100%) contrast(150%);
+          filter: grayscale(100%) contrast(150%);
+}
+
+body.design-12 .bg-video::after {
+  opacity: 0;
+}
+
+body.design-12 .bg-video::before {
+  mix-blend-mode: screen;
+  background: url("../images/bg-12.jpg") center center/cover no-repeat fixed;
+}
+
+body.design-12b .bg-video video {
+  -webkit-filter: grayscale(100%) contrast(150%);
+          filter: grayscale(100%) contrast(150%);
+}
+
+body.design-12b .bg-video::after {
+  opacity: 0;
+}
+
+body.design-12b .bg-video::before {
+  mix-blend-mode: screen;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3c00), to(#00115b));
+  background: -webkit-linear-gradient(bottom, #ff3c00, #00115b);
+  background: linear-gradient(to top, #ff3c00, #00115b);
+}

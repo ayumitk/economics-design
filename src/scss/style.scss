@@ -343,3 +343,65 @@ body.design-10 {
     }
   }
 }
+
+body.design-11 {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: url("../images/bg-11.jpg") center center / cover no-repeat
+        fixed;
+    }
+  }
+}
+
+body.design-11b {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: linear-gradient(to top, #ffe000, #002a7f);
+    }
+  }
+}
+
+body.design-12 {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: url("../images/bg-12.jpg") center center / cover no-repeat
+        fixed;
+    }
+  }
+}
+
+body.design-12b {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: linear-gradient(to top, #ff3c00, #00115b);
+    }
+  }
+}
