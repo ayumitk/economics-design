@@ -57,11 +57,11 @@
 }
 
 html {
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 body {
-  overflow: hidden;
+  // overflow: hidden;
   font-weight: 400;
   line-height: 1.8;
   font-size: 16px;
@@ -166,15 +166,34 @@ $red: #ed2c3f;
 body.design-1 .bg-video::after {
   opacity: 0.3;
 }
-body.design-2 .bg-video::after {
-  opacity: 0.6;
+
+body.design-2 .bg-video {
+  video {
+    filter: grayscale(100%) contrast(150%);
+  }
+  &::after {
+    opacity: 0.6;
+  }
 }
-body.design-3 .bg-video::after {
-  opacity: 0.2;
+
+body.design-3 .bg-video {
+  video {
+    filter: grayscale(100%) contrast(120%);
+  }
+  &::after {
+    opacity: 0.2;
+  }
 }
-body.design-4 .bg-video::after {
-  opacity: 0.3;
+
+body.design-4 .bg-video {
+  video {
+    filter: grayscale(100%) contrast(110%);
+  }
+  &::after {
+    opacity: 0.3;
+  }
 }
+
 body.design-5 .bg-video {
   &::after {
     opacity: 0;
@@ -402,6 +421,71 @@ body.design-12b {
     &::before {
       mix-blend-mode: screen;
       background: linear-gradient(to top, #ff3c00, #00115b);
+    }
+  }
+}
+
+body.design-1b {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(110%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      background: linear-gradient(
+        to right,
+        #bf953f,
+        #fcf6ba,
+        #b38728,
+        #fbf5b7,
+        #aa771c
+      );
+    }
+  }
+}
+
+body.design-1c {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(110%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      background: linear-gradient(to bottom, #d4af37 0%, #c5a028 100%);
+    }
+  }
+}
+
+body.design-5b {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background: linear-gradient(-30deg, #11998e, #38ef7d);
+    }
+  }
+}
+
+body.design-5c {
+  .bg-video {
+    video {
+      filter: grayscale(100%) contrast(150%);
+    }
+    &::after {
+      opacity: 0;
+    }
+    &::before {
+      mix-blend-mode: screen;
+      background-image: linear-gradient(315deg, #05c79a 0%, #8ed153 80%);
     }
   }
 }
